@@ -1,0 +1,6 @@
+<button mat-raised-button (click)="addTask()">Add</button>
+<button mat-raised-button (click)="removeTask()">Remove</button>
+<button mat-raised-button (click)="clearTask()">Clear</button>
+<div *ngFor="let el of tasks; let i = index">
+{{ el }} {{ i + 1 }}
+</div>
